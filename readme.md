@@ -2,6 +2,8 @@
 
 FastRAG is an advanced chatbot powered by Retrieval-Augmented Generation (RAG) using FastAPI and ChromaDB, which allows users to query documents (PDF, DOCX, TXT) and receive AI-generated, contextually relevant answers. By combining the power of pre-trained models from Hugging Face with vector-based retrieval and natural language generation, FastRAG enables intelligent and highly responsive interactions with stored documents.
 
+<img src="assets/FastRAG Streamlit App.png" alt="FastRAG Streamlit App" />
+
 ---
 
 ## **Table of Contents**
@@ -14,9 +16,10 @@ FastRAG is an advanced chatbot powered by Retrieval-Augmented Generation (RAG) u
 -   [Setup & Installation](#setup--installation)
 -   [Usage](#usage)
 -   [API Endpoints](#api-endpoints)
--   [Customization](#customization)
+-   [Future Scope](#future-scope)
+-   [Postman Server Testing](#postman-server-testing)
 -   [License](#license)
--   [Acknowledgements](#acknowledgements)
+-   [Conclusion](#conclusion)
 
 ---
 
@@ -25,6 +28,8 @@ FastRAG is an advanced chatbot powered by Retrieval-Augmented Generation (RAG) u
 FastRAG is a Retrieval-Augmented Generation chatbot that answers user queries based on relevant documents. The project leverages **ChromaDB** for document ingestion, **Hugging Face** for embedding generation, and **FastAPI** for building high-performance APIs.
 
 FastRAG’s unique feature is its combination of traditional document search and AI-based response generation, providing a richer and more accurate response to user queries. The project also includes a customizable **Swagger UI** for easy exploration of the API.
+
+<img src="assets/Code.png" alt="FastRAG Project Code in VSCode editor" />
 
 ---
 
@@ -142,6 +147,7 @@ Additionally, the application includes a **Swagger UI** that you can access at `
 1. **Submit a Query**:
     - Type your question in the input box labeled "You:".
     - Click "Submit" or press `Enter` to send the query to the backend.
+
 2. **Bot Response**:
 
     - Once the query is processed, the bot will respond with an answer. This response will be displayed in a separate message box marked as "FastRAG Bot".
@@ -159,11 +165,13 @@ Additionally, the application includes a **Swagger UI** that you can access at `
 
 ---
 
-### **Interacting with the API Directly**
+### **API Endpoints**
 
 If you prefer to query the API directly without the Streamlit interface, you can use the Swagger UI or send HTTP requests using tools like **Postman** or **curl**.
 
 #### Example Query:
+
+<img src="assets/SwaggerUI Query.png" alt="FastRAG Swagger UI Query API Endpoint" />
 
 You can use the following example to send a query using **curl**:
 
@@ -174,6 +182,8 @@ You can use the following example to send a query using **curl**:
 ```
 
 ### **Swagger UI Documentation**
+
+<img src="assets/SwaggerUI.png" alt="FastRAG Swagger UI Docs" />
 
 FastRAG also generates an interactive **Swagger UI** at the `/docs` endpoint, where you can:
 
@@ -201,6 +211,18 @@ Access it via: `localhost:8000/doocs`
 10. **User Feedback**: Collect and use ratings to improve response accuracy.
 
 ---
+
+### Postman Server Testing
+
+<img src="assets/Postman Root.png" alt="FastRAG Postman Root" />
+<img src="assets/Postman Health.png" alt="FastRAG Postman Get Database Health" />
+<img src="assets/Postman Get.png" alt="FastRAG Postman Ingest Document" />
+<img src="assets/Postman Post.png" alt="FastRAG Postman Submit a Query" />
+
+
+### **License**
+
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ### **Conclusion**
 
