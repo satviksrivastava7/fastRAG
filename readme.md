@@ -1,4 +1,4 @@
-# **FastRAG: A Retrieval-Augmented Generation (RAG) Bot**
+# **FastRAG: A (Retrieval-Augmented Generation) RAG Bot using FastAPI and ChromaDB**
 
 FastRAG is an advanced chatbot powered by Retrieval-Augmented Generation (RAG) using FastAPI and ChromaDB, which allows users to query documents (PDF, DOCX, TXT) and receive AI-generated, contextually relevant answers. By combining the power of pre-trained models from Hugging Face with vector-based retrieval and natural language generation, FastRAG enables intelligent and highly responsive interactions with stored documents.
 
